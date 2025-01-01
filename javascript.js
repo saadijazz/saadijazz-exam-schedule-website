@@ -10,7 +10,7 @@ document.getElementById("search-form").addEventListener("submit", async (event) 
     }
 
     try {
-        const response = await fetch(`http://127.0.0.1:5000/search?course=${course}&section=${section}`);
+        const response = await fetch(`https://saadijazz-exam-schedule-website.onrender.com/search?course=${course}&section=${section}`);
         
         if (!response.ok) {
             throw new Error("Failed to fetch data from the server.");

@@ -1,12 +1,11 @@
 from flask import Flask, request, jsonify
 import pandas as pd
+from flask_cors import CORS
 
 app = Flask(__name__)
 
-from flask_cors import CORS
-
+# Enable CORS for all routes and origins
 CORS(app)
-
 
 # Load the exam schedule data
 data = pd.read_csv('cleaned_exam_schedule.csv')
@@ -29,7 +28,7 @@ def search_exam():
     return jsonify(exam_info)
 
 if __name__ == '__main__':
-    app.run(debug=True)
-    
+    # Change debug mode to False for production
+    app.run(debug=False, host='0.0.0.0', port=5000)
 
 
