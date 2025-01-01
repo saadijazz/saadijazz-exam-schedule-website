@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toronto Metropolitan University's Exam Schedule</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-section">
+        <img src="tmu_logo.png" alt="Toronto Metropolitan University Logo" class="logo">
+        <h1 class="title">Toronto Metropolitan University Exam Schedule</h1>
+    </div>
+    <div class="search-box">
+        <form id="search-form">
+            <input type="text" id="course-code" placeholder="Enter Course Code (e.g., ACC100)" required>
+            <input type="text" id="section" placeholder="Enter Section (e.g., 011)" required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <!-- Added a div for results with better accessibility -->
+    <div id="result-box" class="result-box">
+        <!-- Results will be dynamically injected here -->
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Top Section: Navy Blue Background */
+.top-section {
+    background-color: #00205b; /* Navy Blue */
+    color: white;
+    height: 50vh; /* Upper half of the screen */
+    position: relative;
+}
+
+/* Logo Styles */
+.logo {
+    width: 200px;
+    position: absolute;
+    top: 10px; /* Adjust spacing from the top */
+    left: 10px; /* Adjust spacing from the left */
+}
+
+/* Title Styles */
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%; /* Center vertically within the blue section */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    text-align: center;
+}
+
+/* Search Box Styles */
+.search-box {
+    background-color: #ffc72c; /* Yellow */
+    width: 40%; /* Adjust box size */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%; /* Centered between blue and white */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+/* Form Input Fields */
+input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Search Button */
+button {
+    background-color: #00205b; /* Navy Blue */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #001540;
+}
+
+/* Bottom Section: White Background */
+body::after {
+    content: '';
+    background-color: white;
+    width: 100%;
+    height: 50vh; /* Lower half of the screen */
+    position: absolute;
+    top: 50vh;
+    left: 0;
+    z-index: -1;
+}
